@@ -1,0 +1,47 @@
+---
+format:
+  pdf:
+    documentclass: article
+    mainfont: Charis SIL
+    fontsize: 11pt
+    geometry:
+      - top=20mm
+      - left=20mm
+      - heightrounded
+    toc: false
+    number-sections: false
+    colorlinks: true
+    bibliography: refs.bib
+    cite-method: biblatex
+    # biblatexoptions: [style=apa]
+    suppress-bibliography: true
+---
+
+**Quantifying the cross-linguistics effects of syncretism on agreement attraction** \hfill{} *Utku Turk*
+
+**Background.**
+Speakers often struggle to correctly judge the grammaticality of certain sentence types. A particularly well-studied phenomenon in this regard is subject-verb agreement, where errors frequently arise in the presence of a nearby noun that mismatches in number—for example: *The key to the cabinets are rusty*. This so-called *agreement attraction* effect has been taken as key evidence for cue-based retrieval theories of sentence processing [@LewisVasishth:2005]. According to this model, each processed word is stored as a feature-rich chunk, which can later be retrieved through content-addressable memory mechanisms.
+
+One central question is what kinds of features are used to retrieve the controller of agreement. In its original formulation, cue-based retrieval relied on morphosyntactic features like case, derived from surface form overlap.
+
+However, syncretic nouns—those with ambiguous case marking-do not behave uniformly across languages. These cross-linguistic divergences have challenged the generalizability of cue-based retrieval in explaining agreement attraction. A growing body of research shows that unambiguous case marking, non-syncretic forms, reduces attraction effects in languages such as Russian [@Slioussar2018]. In Czech, attraction, a very minute effect, was only observed when case syncretism occurred on the attractor noun [@LacinaChromy2022]. In contrast, @TurkLogacev2024 report no influence of unambiguous case marking on agreement attraction in Turkish.
+
+
+**Question.**
+One way to address this challenge is to attribute these cross-linguistic differences to language-specific cue dynamics, rather than to limitations of cue-based retrieval itself. @DillonKeshev2024 propose that the language-specific utility of morphological cues may underlie the observed effects of syncretism. For some languages, case marking might not have enough utility to be used in retrieval processes. However, this remains a theoretical proposal, as there is currently no empirical evidence supporting this view.
+
+This raises a key question: can we quantify the language-specific utility of morphological cues—or the "subject-likeness" of a noun phrase—using large language models?
+
+
+**Method.**
+One way to operationalize the language-specific utility of morphological cues is by examining their statistical distribution. To this end, I will analyze materials from agreement attraction experiments with syncretism manipulation.
+
+I will encode the effect of a plural attractor on the mean acceptability of grammatical sentences, comparing syncretic and non-syncretic conditions. For modeling, I will use language-specific GPT-2 models, all of which are available as pre-trained versions on Hugging Face. Additionally, I will examine changes in attention head activation associated with the agreement controller across conditions [@RyuLewis2021].
+<!-- In addition, we include other transformer-based models to predict condition-specific acceptability, motivated by findings that such models align more closely with human acceptability judgments than with reading times [@LeeEtAl2024]. -->
+
+
+**Selected References.** [**1**] Dillon, B., & Keshev, M. (2024). Syntactic dependency formation in sentence processing: A comparative perspective. [**2**] Lacina, R., & Chromỳ, J. (2022). No agreement attraction facilitation observed in czech: Not evensyncretism helps. [**3**] Lewis, R. L., & Vasishth, S. (2005). An Activation–Based Model of Sentence Processing as Skilled Memory Retrieval. [**4**] Ryu, S. H., & Lewis, R. L. (2021). Accounting for agreement phenomena in sentence comprehension with transformer language models: Effects of similarity-based interference onsurprisal and attention. [**5**] Slioussar, N. (2018). Forms and features: The role of syncretism in number agreement attraction. [**6**] Türk, U., & Logačev, P. (2024). Agreement attraction in Turkish: The case of genitive attractors.
+
+
+::: {#refs}
+:::
