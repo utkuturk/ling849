@@ -7,13 +7,15 @@ format:
     geometry:
       - top=20mm
       - left=20mm
+      - bottom=20mm
+      - right=20mm
       - heightrounded
     toc: false
     number-sections: false
     colorlinks: true
     bibliography: refs.bib
     cite-method: biblatex
-    # biblatexoptions: [style=apa]
+    biblatexoptions: [style=apa]
     suppress-bibliography: true
 ---
 
@@ -24,7 +26,8 @@ Speakers often struggle to correctly judge the grammaticality of certain sentenc
 
 One central question is what kinds of features are used to retrieve the controller of agreement. In its original formulation, cue-based retrieval relied on morphosyntactic features like case, derived from surface form overlap.
 
-However, syncretic nouns—those with ambiguous case marking-do not behave uniformly across languages. These cross-linguistic divergences have challenged the generalizability of cue-based retrieval in explaining agreement attraction. A growing body of research shows that unambiguous case marking, non-syncretic forms, reduces attraction effects in languages such as Russian [@Slioussar2018]. In Czech, attraction, a very minute effect, was only observed when case syncretism occurred on the attractor noun [@LacinaChromy2022]. In contrast, @TurkLogacev2024 report no influence of unambiguous case marking on agreement attraction in Turkish.
+However, syncretic nouns—those with ambiguous case marking-do not behave uniformly across languages. These cross-linguistic divergences have challenged the generalizability of cue-based retrieval in explaining agreement attraction. A growing body of research shows that unambiguous case marking, non-syncretic forms, reduces attraction effects in languages such aas Dutch [@HartsuikerEtAl2001], English [@NicolAnton2009], German [@HartsuikerEtAl2003], and Russian [@Chere2021; @Slioussar2018]. In Slovak and Czech, attraction, a very minute effect, was only observed when case syncretism occurred on the attractor noun [@BadeckerKuminiak:2007;@LacinaChromy2022]. In contrast, studies in Eastern Armenian [@AvetisyanEtAl:2020], French [@FranckEtAl2010], and Turkish [@TurkLogacev2024] report no influence of unambiguous case marking on agreement attraction at all.
+
 
 
 **Question.**
@@ -40,7 +43,7 @@ I will encode the effect of a plural attractor on the mean acceptability of gram
 <!-- In addition, we include other transformer-based models to predict condition-specific acceptability, motivated by findings that such models align more closely with human acceptability judgments than with reading times [@LeeEtAl2024]. -->
 
 
-**Selected References.** [**1**] Dillon, B., & Keshev, M. (2024). Syntactic dependency formation in sentence processing: A comparative perspective. [**2**] Lacina, R., & Chromỳ, J. (2022). No agreement attraction facilitation observed in czech: Not evensyncretism helps. [**3**] Lewis, R. L., & Vasishth, S. (2005). An Activation–Based Model of Sentence Processing as Skilled Memory Retrieval. [**4**] Ryu, S. H., & Lewis, R. L. (2021). Accounting for agreement phenomena in sentence comprehension with transformer language models: Effects of similarity-based interference onsurprisal and attention. [**5**] Slioussar, N. (2018). Forms and features: The role of syncretism in number agreement attraction. [**6**] Türk, U., & Logačev, P. (2024). Agreement attraction in Turkish: The case of genitive attractors.
+**Selected References.** [**1**] Dillon, B., & Keshev, M. (2024). _Syntactic dependency formation in sentence processing: A comparative perspective._ [**2**] Lacina, R., & Chromỳ, J. (2022). _No agreement attraction facilitation observed in czech: Not evensyncretism helps._ [**3**] Lewis, R. L., & Vasishth, S. (2005). _An Activation–Based Model of Sentence Processing as Skilled Memory Retrieval._ [**4**] Ryu, S. H., & Lewis, R. L. (2021). _Accounting for agreement phenomena in sentence comprehension with transformer language models: Effects of similarity-based interference onsurprisal and attention._ [**5**] Slioussar, N. (2018). _Forms and features: The role of syncretism in number agreement attraction._ [**6**] Türk, U., & Logačev, P. (2024). _Agreement attraction in Turkish: The case of genitive attractors._
 
 
 ::: {#refs}
